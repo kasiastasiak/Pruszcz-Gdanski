@@ -1,3 +1,3 @@
-# przepisy
+# wakacje
 
 ![słoneczko](http://clipart-library.com/images/rTnKEoj6c.jpg)
