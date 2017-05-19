@@ -1,3 +1,86 @@
-# wakacje
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
 
-![słoneczko](http://clipart-library.com/images/rTnKEoj6c.jpg)
+.flex-container > * {
+    padding: 30px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Pruszcz Gdanski</h1>
+</header>
+
+<nav class="nav">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Strona glowna</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">Wiecej <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mapa.html" class="w3-bar-item w3-button">Mapa</a>
+        <a href="info.html" class="w3-bar-item w3-button">Informacje</a>
+        <a href="zabytki.html" class="w3-bar-item w3-button">Zabytki</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</nav>
+
+<article class="article">
+  <h1>Pruszcz Gdanski</h1>
+  <p>Witam na mojej stronce odnosnie Pruszcz Gdanskiego</p>
+  
+  <p><strong>Znajdziesz tu wiele uzytecznych informacji!</strong></p>
+</article>
+
+
+</div>
+
+</body>
+</html>
